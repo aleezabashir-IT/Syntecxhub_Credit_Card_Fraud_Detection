@@ -83,6 +83,7 @@ The system provides:
 
 # 📂 Project Structure
 
+```text
 Syntecxhub_Credit_Card_Fraud_Detection/
 │
 ├── data/
@@ -169,56 +170,54 @@ python src/final_report.py
 
 ---
 
-# 🔄 ML PIPELINE FLOW
+# 🔄 ML Pipeline
 
+```text
 Raw Credit Card Transactions
-│
-▼
-Data Inspection
-│
-▼
-Exploratory Data Analysis
-│
-▼
-Feature / Target Separation
-│
-▼
-Stratified Train-Test Split
-80% / 20%
-│
-▼
-Feature Scaling
-StandardScaler
-│
-▼
-┌──────┴──────┐
-│ │
-▼ ▼
-Baseline RF SMOTE
-│ │
-│ ▼
-│ Balanced Training
-│ │
-│ ▼
-│ SMOTE Random Forest
-│ │
-└──────┬──────┘
-▼
-Model Evaluation
-│
-▼
-Precision • Recall • F1
-ROC-AUC • PR-AUC
-│
-▼
-Threshold Optimization
-│
-▼
-Final Fraud Detector
-│
-▼
-Models • Reports • Visualizations
-
+            │
+            ▼
+      Data Inspection
+            │
+            ▼
+  Exploratory Data Analysis
+            │
+            ▼
+ Feature / Target Separation
+            │
+            ▼
+ Stratified Train-Test Split
+          80 / 20
+            │
+            ▼
+     Feature Scaling
+      StandardScaler
+            │
+       ┌────┴────┐
+       ▼         ▼
+  Baseline     SMOTE
+ Random Forest   │
+       │         ▼
+       │    Balanced Random
+       │       Forest
+       └────┬────┘
+            ▼
+      Model Evaluation
+            │
+   ┌────────┼─────────┐
+   ▼        ▼         ▼
+Precision  Recall   ROC-AUC
+   │        │         │
+   └────────┼─────────┘
+            ▼
+   Threshold Optimization
+            │
+            ▼
+    Final Fraud Detector
+            │
+      ┌─────┼─────┐
+      ▼     ▼     ▼
+   Models Reports Visualizations
+```
 # 📈 Performance & Results
 
 ### Model Comparison
