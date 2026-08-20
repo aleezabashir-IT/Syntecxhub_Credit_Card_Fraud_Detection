@@ -126,39 +126,30 @@ Syntecxhub_Credit_Card_Fraud_Detection/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
+
 ---
 
 
-# 🚀 Installation & Setup
-
-Clone the repository
-
+🚀 Installation
 git clone https://github.com/aleezabashir-IT/Syntecxhub_Credit_Card_Fraud_Detection.git
 
-Go to the project folder
 
 cd Syntecxhub_Credit_Card_Fraud_Detection
 
-Create a virtual environment
 
 python -m venv venv
-
-Activate the virtual environment
-
-- **Windows:**
-  .\venv\Scripts\Activate.ps1
-- **Linux/macOS:**
-  source venv/bin/activate
-
-Install dependencies
-
+Windows
+.\venv\Scripts\Activate.ps1
+Install Dependencies
 pip install -r requirements.txt
 
-Place the dataset
+Place the dataset at:
 
-> Download `creditcard.csv` and save it to the `data/` directory.
+data/creditcard.csv
 
-Run the execution pipeline
+▶️ Run the Project
+
+Run the scripts in the following order:
 
 python src/data_inspection.py
 python src/eda.py
@@ -171,55 +162,37 @@ python src/final_report.py
 
 ---
 
+## 🔄 ML Pipeline
 
-# 🔄 ML Pipeline
+```mermaid
+flowchart TD
+    A[Raw Credit Card Transactions] --> B[Data Inspection]
+    B --> C[Exploratory Data Analysis]
+    C --> D[Feature & Target Separation]
+    D --> E[Stratified Train-Test Split<br/>80% / 20%]
+    E --> F[Feature Scaling<br/>StandardScaler]
 
-```text
-Raw Credit Card Transactions
-            │
-            ▼
-      Data Inspection
-            │
-            ▼
-  Exploratory Data Analysis
-            │
-            ▼
- Feature / Target Separation
-            │
-            ▼
- Stratified Train-Test Split
-          80 / 20
-            │
-            ▼
-     Feature Scaling
-      StandardScaler
-            │
-       ┌────┴────┐
-       ▼         ▼
-  Baseline     SMOTE
- Random Forest   │
-       │         ▼
-       │    Balanced Random
-       │       Forest
-       └────┬────┘
-            ▼
-      Model Evaluation
-            │
-   ┌────────┼─────────┐
-   ▼        ▼         ▼
-Precision  Recall   ROC-AUC
-   │        │         │
-   └────────┼─────────┘
-            ▼
-   Threshold Optimization
-            │
-            ▼
-    Final Fraud Detector
-            │
-      ┌─────┼─────┐
-      ▼     ▼     ▼
-   Models Reports Visualizations
-```
+    F --> G[Baseline Random Forest]
+
+    F --> H[SMOTE<br/>Training Data Only]
+    H --> I[Balanced Training Data]
+    I --> J[SMOTE Random Forest]
+
+    G --> K[Model Evaluation]
+    J --> K
+
+    K --> L[Precision • Recall • F1-Score]
+    K --> M[ROC-AUC • Average Precision]
+    K --> N[Confusion Matrix]
+
+    L --> O[Threshold Analysis]
+    M --> O
+    N --> O
+
+    O --> P[Optimized Threshold<br/>0.80]
+    P --> Q[Final Fraud Detection Model]
+    Q --> R[Models • Reports • Visualizations]
+
 # 📈 Performance & Results
 
 ### Model Comparison
