@@ -73,7 +73,8 @@ The system provides:
 
 # 📂 Project Structure
 
-Syntecxhub_Credit_Card_Fraud_Detection
+```text
+Syntecxhub_Credit_Card_Fraud_Detection/
 │
 ├── data/
 │   └── creditcard.csv
@@ -115,7 +116,7 @@ Syntecxhub_Credit_Card_Fraud_Detection
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 # 🚀 Installation & Setup
@@ -162,25 +163,36 @@ python src/final_report.py
 
 # 🔄 ML Pipeline Workflow
 
-Raw Transaction Dataset
+```text
+Raw Credit Card Transactions
        │
        ▼
-Stratified Train-Test Split (80/20)
+Data Inspection & EDA
        │
        ▼
-StandardScaler Transformation
+Feature / Target Separation
        │
        ▼
-SMOTE Resampling (Training Set Only)
+Stratified Train-Test Split (80% / 20%)
        │
        ▼
-Random Forest Classifier Training
+Feature Scaling (StandardScaler)
+       │
+       ▼
+Class Balancing via SMOTE (Training Set Only)
+       │
+       ▼
+Model Training (Baseline RF vs SMOTE RF)
+       │
+       ▼
+Model Evaluation (Precision, Recall, F1, ROC-AUC, PR-AUC)
        │
        ▼
 Probability Threshold Optimization (0.80)
        │
        ▼
-Final Model & Metrics Generation
+Final Fraud Detector Saved (Models, Reports & Visualizations)
+```
 
 ---
 
