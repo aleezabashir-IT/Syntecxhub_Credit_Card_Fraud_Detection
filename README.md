@@ -83,49 +83,48 @@ The system provides:
 
 # 📂 Project Structure
 
-Syntecxhub_Credit_Card_Fraud_Detection
+Syntecxhub_Credit_Card_Fraud_Detection/
 │
 ├── data/
-│ └── creditcard.csv
+│   └── creditcard.csv
 │
 ├── images/
-│ ├── amount_boxplot.png
-│ ├── amount_distribution.png
-│ ├── class_distribution.png
-│ ├── feature_importance.png
-│ ├── final_confusion_matrix.png
-│ ├── precision_recall_curve_comparison.png
-│ ├── roc_curve_comparison.png
-│ ├── threshold_analysis.png
-│ └── time_distribution.png
+│   ├── amount_boxplot.png
+│   ├── amount_distribution.png
+│   ├── class_distribution.png
+│   ├── feature_importance.png
+│   ├── final_confusion_matrix.png
+│   ├── precision_recall_curve_comparison.png
+│   ├── roc_curve_comparison.png
+│   ├── threshold_analysis.png
+│   └── time_distribution.png
 │
 ├── models/
-│ ├── baseline_random_forest.joblib
-│ ├── smote_random_forest.joblib
-│ ├── scaler.joblib
-│ ├── final_fraud_detector.joblib
-│ └── final_scaler.joblib
+│   ├── baseline_random_forest.joblib
+│   ├── smote_random_forest.joblib
+│   ├── scaler.joblib
+│   ├── final_fraud_detector.joblib
+│   └── final_scaler.joblib
 │
 ├── reports/
-│ ├── feature_importance.csv
-│ ├── final_evaluation_report.txt
-│ ├── model_comparison.csv
-│ └── threshold_analysis.csv
+│   ├── feature_importance.csv
+│   ├── final_evaluation_report.txt
+│   ├── model_comparison.csv
+│   └── threshold_analysis.csv
 │
 ├── src/
-│ ├── data_inspection.py
-│ ├── eda.py
-│ ├── model_preparation.py
-│ ├── evaluation.py
-│ ├── threshold_analysis.py
-│ ├── feature_importance.py
-│ ├── final_model.py
-│ └── final_report.py
+│   ├── data_inspection.py
+│   ├── eda.py
+│   ├── model_preparation.py
+│   ├── evaluation.py
+│   ├── threshold_analysis.py
+│   ├── feature_importance.py
+│   ├── final_model.py
+│   └── final_report.py
 │
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-
 ---
 
 # 🚀 Installation & Setup
