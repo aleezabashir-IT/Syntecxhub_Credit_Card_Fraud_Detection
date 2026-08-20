@@ -143,6 +143,8 @@ Syntecxhub_Credit_Card_Fraud_Detection/
 ├── requirements.txt
 └── README.md
 
+---
+
 # 🚀 Installation & Setup
 
 ### 1. Clone the Repository
@@ -236,7 +238,6 @@ Probability Threshold Optimization (0.80)
        ▼
 Final Model & Metrics Generation
 
----
 ---
 
 # 📈 Performance & Results
