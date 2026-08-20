@@ -1,15 +1,21 @@
-# 🛡️ Credit Card Fraud Detection System
-
 <div align="center">
 
-### Imbalance-Aware Machine Learning System for Fraud Risk Detection
+# 🛡️ Credit Card Fraud Detection System
+### Imbalance-Aware Machine Learning Pipeline for Fraud Risk Analytics
 
-An end-to-end machine learning system developed to identify potentially fraudulent credit card transactions using **Random Forest classification, SMOTE-based class balancing, probability-threshold optimization, and comprehensive evaluation metrics**.
+An end-to-end production-ready machine learning framework designed to detect financial fraud in severely imbalanced transaction data.
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
-![Scikit-Learn](https://img.shields.io/badge/Scikit_Learn-Machine_Learning-orange?logo=scikit-learn)
-![Imbalanced-Learn](https://img.shields.io/badge/Imbalanced_Learn-SMOTE-red)
-![License](https://img.shields.io/badge/License-MIT-green)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![Imbalanced-Learn](https://img.shields.io/badge/Imbalanced--Learn-SMOTE-red?style=for-the-badge)](https://imbalanced-learn.org/)
+[![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)]()
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+
+<br />
+
+| 💳 Total Transactions | 🚨 Fraud Cases | 🎯 Precision (t=0.80) | 📈 ROC-AUC Score |
+| :---: | :---: | :---: | :---: |
+| **284,807** | **492 (0.17%)** | **97.40%** | **0.9685** |
 
 </div>
 
