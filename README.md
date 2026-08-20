@@ -214,38 +214,29 @@ Each stage builds on the output of the previous stage, creating a reproducible e
 
 ---
 
-# 🔄 ML Pipeline
+# 🔄 ML Pipeline Workflow
 
-```mermaid
-flowchart TD
-    A[Raw Credit Card Transactions] --> B[Data Inspection]
-    B --> C[Exploratory Data Analysis]
-    C --> D[Feature and Target Separation]
-    D --> E[Stratified Train-Test Split<br/>80% / 20%]
-    E --> F[Feature Scaling<br/>StandardScaler]
+Raw Transaction Dataset
+       │
+       ▼
+Stratified Train-Test Split (80/20)
+       │
+       ▼
+StandardScaler Transformation
+       │
+       ▼
+SMOTE Resampling (Training Set Only)
+       │
+       ▼
+Random Forest Classifier Training
+       │
+       ▼
+Probability Threshold Optimization (0.80)
+       │
+       ▼
+Final Model & Metrics Generation
 
-    F --> G[Baseline Random Forest]
-
-    F --> H[SMOTE<br/>Training Data Only]
-    H --> I[Balanced Training Data]
-    I --> J[SMOTE Random Forest]
-
-    G --> K[Model Evaluation]
-    J --> K
-
-    K --> L[Precision • Recall • F1-Score]
-    K --> M[ROC-AUC • Average Precision]
-    K --> N[Confusion Matrix]
-
-    L --> O[Threshold Analysis]
-    M --> O
-    N --> O
-
-    O --> P[Optimized Threshold<br/>0.80]
-    P --> Q[Final Fraud Detection Model]
-    Q --> R[Models • Reports • Visualizations]
-```
-
+---
 ---
 
 # 📈 Performance & Results
