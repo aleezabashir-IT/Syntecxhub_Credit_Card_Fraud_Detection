@@ -128,6 +128,7 @@ Syntecxhub_Credit_Card_Fraud_Detection/
 └── README.md
 ---
 
+
 # 🚀 Installation & Setup
 
 Clone the repository
@@ -169,6 +170,7 @@ python src/final_model.py
 python src/final_report.py
 
 ---
+
 
 # 🔄 ML Pipeline
 
