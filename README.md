@@ -420,9 +420,3 @@ Special thanks to **Syntecxhub** for providing the learning environment and proj
 ⭐ If you find this project useful, consider giving the repository a star.
 
 </div>
-
-**Detecting the unusual. Measuring the risk. Learning from the data.**
-
-⭐ _Explore the project, review the results, and feel free to connect._
-
-</div>
